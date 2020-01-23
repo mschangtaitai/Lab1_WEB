@@ -1,0 +1,261 @@
+
+* { 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "Open sans";
+}
+
+html, body {
+	font-size: 4px;
+	font-family: sans-serif;
+}
+body {
+	background: #f1f6f6;
+}
+
+.header {
+	background: white;
+	width: 100%;
+	height: 26rem;
+}
+
+.header h1 {
+	color: #00a09b;	
+	font-family: "Open Sans";
+	font-size: 7rem;
+	font-weight: 700;
+	height: 7rem;
+	line-height: 5rem;
+	width: 62rem;
+}
+.header h2 {
+	color: #bdbdbd;	
+	font-family: "Open Sans";
+	font-weight: 100;
+	font-size: 4rem;
+}
+
+.school_name {
+	display: table;
+	float: left;
+	height: 100%;
+}
+.navigation {
+	display: table;
+	float: right;
+}
+
+.navigation a {
+	color: #00c4c0;
+	display: table;
+	float: left;
+	font-family: "Monstserrat";
+	font-size: 4rem;
+	height: 100%;
+	padding: 10rem 5rem;
+}
+
+.navigation a.name {
+	font-weight: 700;
+	font-size: 6rem;
+	color: #00a09b;
+}
+
+.main {
+	background: #f1f6f6;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+}
+
+.courses {
+	background: white;
+	margin: 2rem;
+	box-sizing: border-box;
+	border-radius: 2rem;
+	width: 80rem;
+}
+.courses t {
+	font-size: 4rem;
+	color: #e1e6e6;
+	margin: 3rem;
+	font-weight: 700;
+	padding: 4rem;
+}
+
+.grades {
+	margin-left: 4rem;
+}
+
+.grades a {
+	font-size: 4rem;
+	margin: 24rem;
+}
+
+t2 {
+	margin-left: 4rem;
+}
+
+.add {
+	display: flex;
+	flex-direction: row;
+}
+
+t2 {
+	color: #00a09b;
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+input {
+	margin: 3rem;
+	background: #f1f6f6;
+	border-radius: 4rem;
+	border-style: none;
+	font-size: 4rem;
+	padding: 2rem;
+	color: gray;
+}
+
+.add {
+	align-items: center;
+}
+
+.add button {
+	width: 13rem;
+	height: 13rem;
+	background-color: #00b2ac; 
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 10rem;
+    margin: 2rem;
+    font-weight: 700;
+    border-radius: 40px;
+}
+
+.books_title {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.title {
+	font-size: 7rem;
+	color: #00938e;
+	padding-top: 10rem;
+	padding-left: 10rem;
+	font-weight: 400;
+}
+
+.books_title button {
+	font-size: 3rem;
+	color: white;
+	font-weight: 700;
+	margin: 2rem;
+	margin-top: 8rem;
+	width: 51rem;
+	height: 12rem;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+	border-radius: 6rem;
+	: right;
+}
+.books_title button.add_book {
+	margin-left: 100rem;
+	background: #00bc5d;
+}
+
+.books_title button.add_category {
+	background: #00bcb7;
+}
+
+.books_title i {
+	margin-top: 11rem;
+	margin-right: 2rem;
+	color: #a0aaaa;
+}
+
+.idiom_bar {
+	display: flex;
+	flex-direction: row;
+	margin-left: 8rem;
+	font-size: 4rem;
+	color: #a6a7a7;
+}
+
+.idiom {
+	padding: 2rem;
+}
+
+.idiom:hover {
+	color: #019c97;
+	transition: 0.5s;
+}
+
+.books {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 4rem;
+}
+
+.book {
+    border-radius: 2rem;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 75rem;
+    margin: 4rem;
+    overflow: hidden;
+    width: 50rem;
+}
+.book:hover {
+	transform: scale(1.15);
+	transition: 1s;
+}
+
+.book__image {
+    background-position: center;
+    background-size: cover;
+    height: 70rem
+}
+
+.book__footer {
+    background: white;
+    padding: 16px;
+    position: relative;
+}
+
+.book__title {
+    color: #019c97;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.book__size {
+    color: #777777;
+    font-size: 3rem;
+}
+
+.book__actions {
+    bottom: 0;
+    height: 14rem;
+    position: absolute;
+    right: 0;
+    width: 12rem;
+}
+
+@media(min-width: 600px) {
+    .books {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .book {
+        flex-grow: 1;
+    }
+}
